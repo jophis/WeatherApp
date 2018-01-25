@@ -10,6 +10,11 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
+app.post('/', function (req, res) {
+  res.render('index');
+  console.log(req.body.city);
+})
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
